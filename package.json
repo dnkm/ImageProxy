@@ -1,0 +1,22 @@
+{
+  "name": "imageproxy",
+  "version": "1.0.0",
+  "description": "image proxy server",
+  "main": "imageProxy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnkm/ImageProxy.git"
+  },
+  "author": "Daniel Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnkm/ImageProxy/issues"
+  },
+  "homepage": "https://github.com/dnkm/ImageProxy#readme",
+  "dependencies": {
+    "request": "^2.72.0"
+  }
+}
