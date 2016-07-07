@@ -22,7 +22,13 @@ function handleRequest(req, res) {
     var uri = "http://image.mammababy.lifenstats.com.s3-website-us-west-2.amazonaws.com/"+filename;
     
     res.setHeader("Content-Type", "image/png");
-    request.get(uri).pipe(res);
+    //request.get(uri).pipe(res);
+    request
+      .get(uri)
+      .on('error', function(err) {
+        console.log(err);
+      })
+      .pipe(res);
   }
 }
 
